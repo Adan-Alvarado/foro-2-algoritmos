@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- FORMULARIO -->
+        <div class="formulario">
+            <h2>Lista de Compras</h2>
+            <input id="nombreProducto" class="text" placeholder="Agregar producto...">
+            <input id="cantidadProducto" type="number" class="cantidad" placeholder="Cantidad..." min="1" step="1">
+            <select class="categoria" id="catProducto">
+                <option value="Alimentos">Alimentos</option>
+                <option value="Electrodomesticos">Electrodomesticos</option>
+                <option value="Limpieza">Limpieza</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <div class="botones">
+                <button id="btnAñadir" class="btnAñadir">Añadir Producto</button>
+                <button id="btnLimpiar" class="btnLimpiar">Limpiar</button>
+            </div>
+        </div>
+
+        <!-- LISTA -->
+        <div class="lista">
+            <ul id="listaProductos"></ul>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
